@@ -1,5 +1,6 @@
 import Counter from "@/component/Counter";
 import Days from "@/component/Days";
+
 export default function Home() {
   return (
     <div className="snap-y snap-mandatory h-screen overflow-y-scroll bg-blue-700 ">
