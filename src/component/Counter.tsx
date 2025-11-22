@@ -10,11 +10,10 @@ const tripDate = new Date(2025, 11, 5)
 const totalWaitingDays = 295
 const totalWaitingHours = totalWaitingDays * 24
 const tripTimeStamp = tripDate.getTime()
-const totalTimestamp = tripDate.getTime()
 const msPerHour = 60 * 60 * 1000
-let daysLeft
-let pctCountdown
-let hoursLeft
+let daysLeft: number
+let pctCountdown:string
+let hoursLeft:number
 
 
 const Counter = () => {
@@ -33,19 +32,19 @@ const Counter = () => {
     )). toFixed(2)
 
     return (
-        <div className="h-[43%] w-9/12 bg-neutral-500/80 rounded-3xl backdrop-blur-xs border flex flex-col items-center gap-[10%] shadow-2xl"  >
-            <div className=" w-full h-15 bg-neutral-200/30 backdrop-blur-3xl border rounded-3xl self-start flex justify-center items-center   ">
+        <div className="h-[43%] w-9/12 bg-neutral-500/80 rounded-3xl backdrop-blur-xs border flex flex-col items-center gap-[10%] shadow-2xl transition-transform duration-300 ease-in-out will-change-transform hover:scale-105"  >
+            <div className="flex items-center self-start justify-center w-full border h-15 bg-neutral-200/30 backdrop-blur-3xl rounded-3xl">
                 <h1 className="text-3xl font-bold text-black text-shadow-title">Enotel Countdown</h1>
             </div>
-            <div className="w-full flex flex-col items-center gap-20">
-                <div className="w-[90%] h-[3vh] bg-blue-900/70 rounded-4xl border-4" >
-                    <div className=" h-full bg-amber-300 rounded-4xl" style={{width: `${pctCountdown}%`}} ></div>
+            <div className="flex flex-col items-center w-full gap-20">
+                <div className="w-[90%] h-[3vh] rounded-4xl border-4" >
+                    <div className="h-full rounded-full animate-gradient-move bg-[linear-gradient(90deg,green_0%,green_45%,blue_50%,blue_55%,green_60%,green_100%)] bg-size-[300%_100%] transition-[width] duration-500 ease-in " style={{width: `${pctCountdown}%`}} ></div>
                 </div>
-                <p className="text-white text-shadow-xl font-semibold text-3xl font-sans">{pctCountdown}% concluído<FontAwesomeIcon icon={faCircleNotch} spin size='xs' className='ml-1'/></p>
+                <p className="font-sans text-3xl font-semibold text-white text-shadow-xl">{pctCountdown}% concluído<FontAwesomeIcon icon={faCircleNotch} spin size='xs' className='ml-1'/></p>
             </div>
             
 
-            <p className="text-black font-semibold text-xl">
+            <p className="text-xl font-semibold text-black">
                 {daysLeft === 1 && (
                     <>
                         <FontAwesomeIcon icon={faSuitcaseRolling} />
@@ -65,7 +64,7 @@ const Counter = () => {
                     </>
                 )}
                 </p>
-            <p className=" text-black mt-auto font-semibold"><FontAwesomeIcon icon={faCalendarDays} />05/12/2025</p>
+            <p className="mt-auto font-semibold text-black "><FontAwesomeIcon icon={faCalendarDays} />05/12/2025</p>
         </div>
     )
 

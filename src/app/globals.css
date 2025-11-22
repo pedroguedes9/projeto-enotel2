@@ -17,6 +17,14 @@
   --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@keyframes gradient-move {
+  0% { background-position: 100% 50% }
+  100% { background-position: 0% 50%; }
+}
+@utility animate-gradient-move {
+  animation: gradient-move 4s linear infinite;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
