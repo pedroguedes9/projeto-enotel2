@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Contador do Enotel",
   description: "ENOTEL TA CHEGANDO",
   icons: {
-    icon: "/favicon.ico"
+    icon: "/favicon.webp"
   },
   openGraph: {
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Contador do Enotel",
     images: [
       {
-        url: "/favicon.ico",
+        url: "/favicon.webp",
         width: 1200,
         height: 630,
         alt: "Enotel",
