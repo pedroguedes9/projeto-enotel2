@@ -36,7 +36,7 @@ const Counter = () => {
             <div className="flex items-center self-start justify-center w-full border h-15 bg-neutral-200/30 backdrop-blur-3xl rounded-3xl">
                 <h1 className="text-2xl md:text-5xl  font-bold text-black text-shadow-title">Enotel Countdown</h1>
             </div>
-            <div className="flex flex-col items-center w-full gap-20">
+            <div className="flex flex-col items-center w-full gap-10 md:gap-20">
                 <div className="w-[90%] h-[3vh] rounded-4xl border-4" >
                     <div className="h-full rounded-full animate-gradient-move bg-[linear-gradient(90deg,green_0%,green_45%,blue_50%,blue_55%,green_60%,green_100%)] bg-size-[300%_100%] transition-[width] duration-500 ease-in " style={{width: `${pctCountdown}%`}} ></div>
                 </div>
