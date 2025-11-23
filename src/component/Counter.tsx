@@ -34,17 +34,17 @@ const Counter = () => {
     return (
         <div className="h-[43%] w-9/12 bg-neutral-500/80 rounded-3xl backdrop-blur-xs border flex flex-col items-center gap-[10%] shadow-2xl transition-transform duration-300 ease-in-out will-change-transform hover:scale-105"  >
             <div className="flex items-center self-start justify-center w-full border h-15 bg-neutral-200/30 backdrop-blur-3xl rounded-3xl">
-                <h1 className="text-3xl font-bold text-black text-shadow-title">Enotel Countdown</h1>
+                <h1 className="text-2xl md:text-5xl  font-bold text-black text-shadow-title">Enotel Countdown</h1>
             </div>
             <div className="flex flex-col items-center w-full gap-20">
                 <div className="w-[90%] h-[3vh] rounded-4xl border-4" >
                     <div className="h-full rounded-full animate-gradient-move bg-[linear-gradient(90deg,green_0%,green_45%,blue_50%,blue_55%,green_60%,green_100%)] bg-size-[300%_100%] transition-[width] duration-500 ease-in " style={{width: `${pctCountdown}%`}} ></div>
                 </div>
-                <p className="font-sans text-3xl font-semibold text-white text-shadow-xl">{pctCountdown}% concluído<FontAwesomeIcon icon={faCircleNotch} spin size='xs' className='ml-1'/></p>
+                <p className="text-xl md:text-4xl font-semibold text-white text-shadow-xl font-mono">{pctCountdown}% concluído<FontAwesomeIcon icon={faCircleNotch} spin size='xs' className='ml-1'/></p>
             </div>
             
 
-            <p className="text-xl font-semibold text-black">
+            <p className=" md:text-2xl font-semibold text-black">
                 {daysLeft === 1 && (
                     <>
                         <FontAwesomeIcon icon={faSuitcaseRolling} />
