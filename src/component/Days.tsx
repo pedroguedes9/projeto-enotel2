@@ -12,7 +12,7 @@ const type = {
 const Days = (props: Props) => {
     return (
         <div
-            className={`max-w-4xl h-[99svh] bg-center mx-auto snap-center bg-cover bg-no-repeat border-2 shadow-black shadow-xl flex flex-col items-center justify-center
+            className={`max-w-4xl h-svh bg-center mx-auto snap-center bg-cover bg-no-repeat border-2 shadow-black shadow-xl flex flex-col items-center justify-center
                     ${props.type === "corner-top" && type.cornerTop}
                     ${props.type === "corner-bottom" && type.cornerBottom}
                 `}

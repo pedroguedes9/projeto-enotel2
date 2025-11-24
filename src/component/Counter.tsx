@@ -45,16 +45,16 @@ const Counter = () => {
             
 
             <p className=" md:text-2xl font-semibold text-black">
-                {daysLeft === 1 && (
+                {daysLeft === 0 && (
                     <>
                         <FontAwesomeIcon icon={faSuitcaseRolling} />
                         A viagem chegou!! 🎉
                     </>
                 )}
-                {daysLeft === 0 && (
+                {daysLeft === 1 && (
                     <>
                         <FontAwesomeIcon icon={faSuitcaseRolling} />
-                        Falta 1 dia para a viagem 🎉
+                        {hoursLeft <= 1 ? `Falta 1 hora para viagem 🎉` : `Faltam ${hoursLeft} horas para a viagem 🎉` }
                     </>
                 )}
                 {daysLeft > 1 && (
